@@ -5,10 +5,9 @@
   "private": false,
   "types": "./src/index.d.ts",
   "files": [
-    "src/**/*.d.ts"
+    "src"
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.29.2"
+  "license": "ISC"
 }
