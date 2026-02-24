@@ -1,6 +1,6 @@
 {
   "name": "flowable-convert-types",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "private": false,
   "scripts": {
@@ -13,5 +13,8 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
