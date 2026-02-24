@@ -9,6 +9,14 @@ export enum EVertexType {
     SEQUENCE_FLOW = 'SequenceFlow',
 }
 
+export enum ERequestMethodType {
+    GET,
+    POST,
+    PUT,
+    BATCH,
+    DELETE,
+}
+
 export interface IBounds {
     lowerRight: { x: number, y: number },
     upperLeft: { x: number, y: number },
@@ -42,7 +50,9 @@ export interface INodeProperties {
     serviceTaskConfig?: {
         operation?: TOperationTypes,
         uri?: string,
-        method?: string,
+        method?: ERequestMethodType,
+        responseVariableName?: string,
+        saveResponseVariableAsJson?: boolean,
     },
     userTaskAssignment?: {
         assignment: {

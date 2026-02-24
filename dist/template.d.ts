@@ -8,6 +8,13 @@ export declare enum EVertexType {
     SEND_TASK = "SendTask",
     SEQUENCE_FLOW = "SequenceFlow"
 }
+export declare enum ERequestMethodType {
+    GET = 0,
+    POST = 1,
+    PUT = 2,
+    BATCH = 3,
+    DELETE = 4
+}
 export interface IBounds {
     lowerRight: {
         x: number;
@@ -43,7 +50,9 @@ export interface INodeProperties {
     serviceTaskConfig?: {
         operation?: TOperationTypes;
         uri?: string;
-        method?: string;
+        method?: ERequestMethodType;
+        responseVariableName?: string;
+        saveResponseVariableAsJson?: boolean;
     };
     userTaskAssignment?: {
         assignment: {
