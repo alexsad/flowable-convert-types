@@ -1,0 +1,14 @@
+{
+  "name": "flowable-convert-types",
+  "version": "1.0.0",
+  "description": "",
+  "private": false,
+  "types": "./src/index.d.ts",
+  "files": [
+    "src/**/*.d.ts"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.29.2"
+}
