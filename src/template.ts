@@ -54,6 +54,10 @@ export interface INodeProperties {
         responseVariableName?: string,
         saveResponseVariableAsJson?: boolean,
     },
+    scriptTaskConfig?: {
+        scriptFormat: "javascript" | "groovy" | "juel",
+        resultVariable: string,
+    },
     userTaskAssignment?: {
         assignment: {
             assignee?: string,
