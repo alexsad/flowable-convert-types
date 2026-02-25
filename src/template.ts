@@ -32,6 +32,12 @@ export interface IResourceReference {
 
 export type TOperationTypes = "mail" | "expression" | "delegateExpression" | "html"
 
+export interface ISequenceFlowNodeProperties {
+    prototypeId: string,
+    nodeType: EVertexType,
+    conditionExpression?: string,
+}
+
 export interface INodeProperties {
     name?: string,
     documentation?: string,
@@ -72,7 +78,7 @@ export interface INodeProperties {
 export interface IChildShape {
     resourceId: string,
     stencil: IStencil,
-    properties: INodeProperties,
+    properties: INodeProperties | ISequenceFlowNodeProperties,
     bounds?: IBounds | {},
     outgoing?: IResourceReference[],
     childShapes?: IChildShape[],
