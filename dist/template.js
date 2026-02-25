@@ -14,9 +14,9 @@ var EVertexType;
 })(EVertexType || (exports.EVertexType = EVertexType = {}));
 var ERequestMethodType;
 (function (ERequestMethodType) {
-    ERequestMethodType[ERequestMethodType["GET"] = 0] = "GET";
-    ERequestMethodType[ERequestMethodType["POST"] = 1] = "POST";
-    ERequestMethodType[ERequestMethodType["PUT"] = 2] = "PUT";
-    ERequestMethodType[ERequestMethodType["BATCH"] = 3] = "BATCH";
-    ERequestMethodType[ERequestMethodType["DELETE"] = 4] = "DELETE";
+    ERequestMethodType["GET"] = "GET";
+    ERequestMethodType["POST"] = "POST";
+    ERequestMethodType["PUT"] = "PUT";
+    ERequestMethodType["BATCH"] = "BATCH";
+    ERequestMethodType["DELETE"] = "DELETE";
 })(ERequestMethodType || (exports.ERequestMethodType = ERequestMethodType = {}));

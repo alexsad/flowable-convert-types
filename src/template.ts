@@ -10,11 +10,11 @@ export enum EVertexType {
 }
 
 export enum ERequestMethodType {
-    GET,
-    POST,
-    PUT,
-    BATCH,
-    DELETE,
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    BATCH = "BATCH",
+    DELETE = "DELETE",
 }
 
 export interface IBounds {

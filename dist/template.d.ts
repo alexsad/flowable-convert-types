@@ -9,11 +9,11 @@ export declare enum EVertexType {
     SEQUENCE_FLOW = "SequenceFlow"
 }
 export declare enum ERequestMethodType {
-    GET = 0,
-    POST = 1,
-    PUT = 2,
-    BATCH = 3,
-    DELETE = 4
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    BATCH = "BATCH",
+    DELETE = "DELETE"
 }
 export interface IBounds {
     lowerRight: {
