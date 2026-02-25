@@ -57,6 +57,7 @@ export interface INodeProperties {
     scriptTaskConfig?: {
         scriptFormat: "javascript" | "groovy" | "juel";
         resultVariable: string;
+        scriptContent: string;
     };
     userTaskAssignment?: {
         assignment: {
