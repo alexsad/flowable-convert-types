@@ -33,6 +33,7 @@ export interface IResourceReference {
 export type TOperationTypes = "mail" | "expression" | "delegateExpression" | "html"
 
 export interface ISequenceFlowNodeProperties {
+    name?: string,
     prototypeId: string,
     nodeType: EVertexType,
     conditionExpression?: string,
