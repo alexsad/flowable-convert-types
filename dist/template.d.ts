@@ -74,13 +74,12 @@ export interface INodeProperties {
         };
     };
 }
-export interface IChildShape {
+export interface IChildShape<T> {
     resourceId: string;
     stencil: IStencil;
-    properties: INodeProperties | ISequenceFlowNodeProperties;
+    properties: T;
     bounds?: IBounds | {};
     outgoing?: IResourceReference[];
-    childShapes?: IChildShape[];
     dockers?: Array<{
         x: number;
         y: number;
@@ -94,6 +93,6 @@ export interface IFlowableBpmnJson {
         documentation?: string;
     };
     stencil: IStencil;
-    childShapes: IChildShape[];
+    childShapes: IChildShape<INodeProperties | ISequenceFlowNodeProperties>[];
     bounds?: IBounds;
 }
