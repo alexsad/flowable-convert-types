@@ -74,7 +74,7 @@ export interface INodeProperties {
         };
     };
 }
-export interface IChildShape<T> {
+export interface IChildShape<T extends ISequenceFlowNodeProperties | INodeProperties> {
     resourceId: string;
     stencil: IStencil;
     properties: T;
