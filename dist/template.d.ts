@@ -73,6 +73,10 @@ export interface INodeProperties {
             candidateUsers: string[];
         };
     };
+    target?: {
+        document_definition_id?: string;
+        uri?: string;
+    };
 }
 export interface IChildShape<T extends ISequenceFlowNodeProperties | INodeProperties> {
     resourceId: string;
