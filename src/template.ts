@@ -73,6 +73,10 @@ export interface INodeProperties {
             candidateGroups: string[],
             candidateUsers: string[],
         },
+    },
+    target?:{
+        document_definition_id?: string,
+        uri?: string,
     }
 }
 
