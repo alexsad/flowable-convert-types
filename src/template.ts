@@ -75,7 +75,7 @@ export interface INodeProperties {
         },
     },
     target?:{
-        document_definition_id?: string,
+        documentDefinitionId?: string,
         uri?: string,
     }
 }
