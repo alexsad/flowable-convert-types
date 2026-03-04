@@ -39,7 +39,7 @@ export interface ISequenceFlowNodeProperties {
     conditionExpression?: string,
 }
 
-type TNavigationMode =
+export type TNavigationMode =
   | 'self'
   | 'external'
   | 'embedded'

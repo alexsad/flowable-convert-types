@@ -38,7 +38,7 @@ export interface ISequenceFlowNodeProperties {
     nodeType: EVertexType;
     conditionExpression?: string;
 }
-type TNavigationMode = 'self' | 'external' | 'embedded';
+export type TNavigationMode = 'self' | 'external' | 'embedded';
 export interface INodeProperties {
     name?: string;
     documentation?: string;
@@ -102,4 +102,3 @@ export interface IFlowableBpmnJson {
     childShapes: IChildShape<INodeProperties | ISequenceFlowNodeProperties>[];
     bounds?: IBounds;
 }
-export {};
