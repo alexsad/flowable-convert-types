@@ -39,6 +39,11 @@ export interface ISequenceFlowNodeProperties {
     conditionExpression?: string,
 }
 
+type TNavigationMode =
+  | 'self'
+  | 'external'
+  | 'embedded'
+
 export interface INodeProperties {
     name?: string,
     documentation?: string,
@@ -77,6 +82,7 @@ export interface INodeProperties {
     target?:{
         documentDefinitionId?: string,
         uri?: string,
+        navigationMode: TNavigationMode,
     }
 }
 
