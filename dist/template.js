@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ERequestMethodType = exports.EVertexType = void 0;
+exports.ETNavigationMode = exports.ERequestMethodType = exports.EVertexType = void 0;
 var EVertexType;
 (function (EVertexType) {
     EVertexType["START"] = "StartNoneEvent";
@@ -20,3 +20,9 @@ var ERequestMethodType;
     ERequestMethodType["BATCH"] = "BATCH";
     ERequestMethodType["DELETE"] = "DELETE";
 })(ERequestMethodType || (exports.ERequestMethodType = ERequestMethodType = {}));
+var ETNavigationMode;
+(function (ETNavigationMode) {
+    ETNavigationMode["SELF"] = "self";
+    ETNavigationMode["EXTERNAL"] = "external";
+    ETNavigationMode["EMBEDDED"] = "embedded";
+})(ETNavigationMode || (exports.ETNavigationMode = ETNavigationMode = {}));
