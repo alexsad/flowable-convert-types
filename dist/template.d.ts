@@ -38,7 +38,7 @@ export interface ISequenceFlowNodeProperties {
     nodeType: EVertexType;
     conditionExpression?: string;
 }
-export declare enum ETNavigationMode {
+export declare enum ENavigationMode {
     SELF = "self",
     EXTERNAL = "external",
     EMBEDDED = "embedded"
@@ -81,7 +81,7 @@ export interface INodeProperties {
     target?: {
         documentDefinitionId?: string;
         uri?: string;
-        navigationMode: ETNavigationMode;
+        navigationMode: ENavigationMode;
     };
 }
 export interface IChildShape<T extends ISequenceFlowNodeProperties | INodeProperties> {
