@@ -54,7 +54,7 @@ export interface INodeProperties {
     overrideId?: string,
     taskId?: string,
     taskCount?: number,
-    stepOrder: number,
+    stepOrder?: number,
     sendTaskConfig?:{
         operation?: TOperationTypes,
         target?:string,
