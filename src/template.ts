@@ -55,6 +55,7 @@ export interface INodeProperties {
     taskId?: string,
     taskCount?: number,
     stepOrder?: number,
+    dueDate?: string,
     sendTaskConfig?:{
         operation?: TOperationTypes,
         target?:string,
