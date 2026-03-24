@@ -68,6 +68,8 @@ export interface INodeProperties {
         method?: ERequestMethodType,
         responseVariableName?: string,
         saveResponseVariableAsJson?: boolean,
+        requestBody?: {[key: string]: string},
+        requestHeaders?: {[key: string]: string},
     },
     scriptTaskConfig?: {
         scriptFormat: "javascript" | "groovy" | "juel",
